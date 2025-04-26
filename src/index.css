@@ -117,4 +117,30 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  #root {
+    @apply flex flex-col min-h-screen;
+  }
+}
+
+@theme {
+  --breakpoint-xs: 29.6875rem; /* 475px */
+  --breakpoint-sm: 35.625rem; /* 570px */
+  --breakpoint-md: 47.5rem; /* 760px */
+  --breakpoint-lg: 59.375rem; /* 950px */
+  --breakpoint-xl: 71.25rem; /* 1140px */
+}
+
+@layer utilities {
+  .container {
+    padding-inline: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--breakpoint-xl);
+  }
+}
+
+.image-shadow {
+  box-shadow: 0 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0 18px 88px -4px rgba(24, 39, 75, 0.14);
 }
