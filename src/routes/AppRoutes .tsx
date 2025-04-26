@@ -1,3 +1,4 @@
+import ScreenLoading from '@/components/common/ScreenLoading';
 import MainLayout from '@/components/layout/MainLayout';
 import { Suspense, lazy } from 'react'
 import { Routes, Route } from 'react-router-dom';
@@ -5,10 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 
 const HomePage = lazy(() => import('@/pages/HomePage '));
 
-
-
-const Loading = () => <div>Loading...</div>;
-
+const Loading = () => <ScreenLoading />;
 
 const AppRoutes = () => {
     return (

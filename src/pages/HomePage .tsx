@@ -1,5 +1,6 @@
 import HeroBlock from "@/components/blocks/HeroBlock"
 import ProfileBLock from "@/components/blocks/ProfileBLock"
+import ProjectsBlock from "@/components/blocks/ProjectsBlock"
 import SkillsBlock from "@/components/blocks/SkillsBlock"
 import { Separator } from "@/components/ui/separator"
 
@@ -9,9 +10,10 @@ const HomePage = () => {
         <>
             <HeroBlock />
             <SkillsBlock />
-            <Separator className="max-w-[calc(71.25rem_-_2rem)] mx-auto" decorative={false} />
+            <Separator />
             <ProfileBLock />
-            <Separator className="max-w-[calc(71.25rem_-_2rem)] mx-auto" decorative={false} />
+            <Separator />
+            <ProjectsBlock />
         </>
     )
 }

@@ -3,10 +3,10 @@ import SkillCard from "../SkillCard"
 
 const SkillsBlock = () => {
     return (
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
             <div className="container">
                 <BlockTitle >Skills</BlockTitle>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 md:gap-8 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
                     <SkillCard />
                     <SkillCard />
                     <SkillCard />
