@@ -6,7 +6,7 @@ const ProjectsBlock = () => {
         <section className="py-8 lg:py-16">
             <div className="container">
                 <BlockTitle >Projects</BlockTitle>
-                <div className='grid lg:grid-cols-3 gap-12'>
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-12'>
                     <ProjectCard />
                     <ProjectCard />
                     <ProjectCard />

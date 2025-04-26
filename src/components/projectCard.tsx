@@ -6,9 +6,9 @@ import { Link } from 'react-router'
 const ProjectCard = () => {
     return (
         <article className='space-y-4'>
-            <img src={heroImg} alt="Image" className=" w-full object-cover aspect-video rounded-md" />
-            <h4 className='text-3xl mb-2 font-semibold text-primary-700'>Workintech</h4>
-            <p className='text-sm text-muted-foreground leading-tight'>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
+            <img src={heroImg} alt="Image" className=" w-full object-cover aspect-video " />
+            <h4 className='text-3xl mb-2 font-medium text-primary-700 dark:text-primary-300'>Workintech</h4>
+            <p className='text-sm text-muted-foreground dark:text-white leading-tight'>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
             <div className='flex gap-2 justify-start flex-wrap'>
                 <Button className='font-normal text-sm' variant={'outline'} size={'sm'}>react</Button>
                 <Button className='font-normal text-sm' variant={'outline'} size={'sm'}>redux</Button>

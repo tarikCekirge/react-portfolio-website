@@ -11,7 +11,7 @@ type BlockTitleProps = {
 
 const BlockTitle = ({ as: As = 'h3', children, className }: BlockTitleProps) => {
     return (
-        <As className={cn('text-4xl md:text-5xl mb-6 xl:mb-12 font-bold text-gray-700', className)}>
+        <As className={cn('text-4xl md:text-5xl mb-6 xl:mb-12 font-bold text-gray-700 dark:text-primary-100', className)}>
             {children}
         </As>
     );

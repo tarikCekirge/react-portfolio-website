@@ -13,17 +13,19 @@
 
   --font-display: "Inter", sans-serif;
 
-  --color-primary-50: #efeeff;
-  --color-primary-100: #e2e0ff;
-  --color-primary-200: #cac7fe;
-  --color-primary-300: #bab2e7;
+  --color-primary-50: #e1e1ff;
+  --color-primary-100: #aebccf;
+  --color-primary-200: #cfcbff;
+  --color-primary-250: #bab2e7;
+  --color-primary-300: #b7aaff;
   --color-primary-400: #8881f8;
+  --color-primary-450: #8f88ff;
   --color-primary-500: #6c63f1;
   --color-primary-600: #5046e5;
   --color-primary-700: #4338ca;
   --color-primary-800: #3730a3;
   --color-primary-900: #332e81;
-  --color-primary-950: #1e1b4b;
+  --color-primary-950: #252128;
 
   /* Blue */
   --color-blue-100: #e6f0fa;
@@ -53,7 +55,8 @@
   --color-gray-300: #b8b8b8;
   --color-gray-400: #999999;
   --color-gray-500: #777777;
-  --color-gray-600: #6b7280;
+  --color-gray-600: #383838;
+  --color-gray-650: #141414;
   --color-gray-700: #1f2937;
   --color-gray-800: #0f172a;
   --color-gray-900: #0a0a14;
@@ -152,11 +155,6 @@
   --border: var(--color-primary-800);
   --input: var(--color-primary-800);
   --ring: var(--color-primary-800);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.141 0.005 285.823);
   --sidebar-primary: var(--primary-700);
@@ -168,7 +166,7 @@
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
+  --background: var(--color-primary-950);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
   --card-foreground: oklch(0.985 0 0);
@@ -186,12 +184,6 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.541 0.281 293.009);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.21 0.006 285.885);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.541 0.281 293.009);
   --sidebar-primary-foreground: oklch(0.969 0.016 293.756);

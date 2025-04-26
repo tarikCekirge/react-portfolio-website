@@ -7,7 +7,7 @@ const ProfileBLock = () => {
                 <BlockTitle >Profile</BlockTitle>
                 <div className="grid lg:grid-cols-[1fr_2fr] gap-6 md:gap-10 lg:gap-12">
                     <div className="space-y-1">
-                        <h4 className="text-3xl mb-2 md:mb-3 font-semibold text-primary-700"> Profile </h4>
+                        <h4 className="text-3xl mb-2 md:mb-3 font-medium text-primary-700 dark:text-primary-300"> Profile </h4>
                         <div className="grid grid-cols-[2fr_3fr] gap-4">
                             <h6 className="font-semibold"> Doğum Tarihi</h6>
                             <p>24.03.1996</p>
@@ -27,8 +27,8 @@ const ProfileBLock = () => {
                         </div>
                     </div>
                     <div className="space-y-1">
-                        <h4 className="text-3xl mb-2 md:mb-3 font-semibold text-primary-700"> About Me </h4>
-                        <div className="space-y-3 text-muted-foreground [&>p]:leading-snug">
+                        <h4 className="text-3xl mb-2 md:mb-3 font-medium text-primary-700 dark:text-primary-300"> About Me </h4>
+                        <div className="space-y-3 text-muted-foreground dark:text-white [&>p]:leading-snug">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.</p>
                             <p>Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! </p>
                         </div>
