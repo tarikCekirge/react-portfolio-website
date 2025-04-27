@@ -1,7 +1,6 @@
 import { Separator } from "@/components/ui/separator"
 import { Link } from "react-router"
 import { Button } from "@/components/ui/button"
-import ThemeSwitcher from "../theme-switcher"
 
 const Header = () => {
     const switchTheme = () => {
@@ -15,7 +14,6 @@ const Header = () => {
         <header className="py-4 space-y-8">
             <div className="container">
                 <div className="flex h-5 items-center justify-end space-x-4 text-sm text-[#777777]">
-                    <ThemeSwitcher onChange={switchTheme} />
                     <button onClick={switchTheme} className="hover:no-underline px-0 cursor-pointer font-medium text-sm">DARK MODE</button>
                     <Separator orientation="vertical" className="!w-0.5 bg-[#777777] !h-4" />
                     <button onClick={switchLang} className="hover:no-underline px-0 cursor-pointer font-medium text-sm"><span><span>TÜRKÇE</span>'YE GEÇ</span></button>
