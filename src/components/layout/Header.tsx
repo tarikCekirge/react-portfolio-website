@@ -1,24 +1,50 @@
 import { Separator } from "@/components/ui/separator"
 import { Link } from "react-router"
 import { Button } from "@/components/ui/button"
-import ThemeSwitcher from "../theme-switcher"
+
+import { toggleTheme, setLanguage, selectTheme, selectLanguage } from '@/store/features/ui';
+import { useAppDispatch, useAppSelector } from "@/store/hook";
+
 
 const Header = () => {
-    const switchTheme = () => {
-        console.log('Theme Switch')
-    }
 
-    const switchLang = () => {
-        console.log('Lang Switch')
-    }
+    const dispatch = useAppDispatch();
+    const currentTheme = useAppSelector(selectTheme);
+    const currentLanguage = useAppSelector(selectLanguage);
+
+
+    const themeButtonText = currentTheme === 'light' ? 'DARK MODE' : 'LIGHT MODE';
+    const languageButtonText = currentLanguage === 'en' ? "TÜRKÇE'YE GEÇ" : 'SWITCH TO ENGLISH';
+
+    const handleThemeToggle = () => {
+        dispatch(toggleTheme());
+    };
+
+    const handleLanguageToggle = () => {
+        const nextLanguage = currentLanguage === 'en' ? 'tr' : 'en';
+        dispatch(setLanguage(nextLanguage));
+
+    };
     return (
         <header className="py-4 space-y-8">
             <div className="container">
                 <div className="flex h-5 items-center justify-end space-x-4 text-sm text-[#777777]">
-                    <ThemeSwitcher onChange={switchTheme} />
-                    <button onClick={switchTheme} className="hover:no-underline px-0 cursor-pointer font-medium text-sm">DARK MODE</button>
+                    <button
+                        onClick={handleThemeToggle}
+                        className="hover:no-underline px-0 cursor-pointer font-medium text-sm"
+                        aria-label={`Switch to ${currentTheme === 'light' ? 'dark' : 'light'} mode`}
+                    >
+                        {themeButtonText}
+                    </button>
                     <Separator orientation="vertical" className="!w-0.5 bg-[#777777] !h-4" />
-                    <button onClick={switchLang} className="hover:no-underline px-0 cursor-pointer font-medium text-sm"><span><span>TÜRKÇE</span>'YE GEÇ</span></button>
+                    <button
+                        onClick={handleLanguageToggle}
+                        className="hover:no-underline px-0 cursor-pointer font-medium text-sm"
+                        aria-label={`Switch language to ${currentLanguage === 'en' ? 'Turkish' : 'English'}`}
+                    >
+
+                        {languageButtonText}
+                    </button>
                 </div>
             </div>
             <nav className="container items-center flex justify-end space-x-8">

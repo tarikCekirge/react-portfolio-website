@@ -1,0 +1,135 @@
+{
+    "language": "English",
+    "greeting": "Hello World!",
+    "header": {
+        "skills": "Skills",
+        "projects": "Projects",
+        "hireMe": "Hire me"
+    },
+    "HeroBlock": {
+        "greeting": "Almila Su",
+        "intro": "Creative thinker Minimalism lover",
+        "content": "Hi, I’m Tarik. I’m a full-stack developer. If you are looking for a Developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me.",
+        "socials": [
+            {
+                "logo": "",
+                "alt_text": "Hire me",
+                "link": "https://www.linkedin.com/in/tarikcekirge/"
+            },
+            {
+                "logo": "FaGithub",
+                "alt_text": "Github",
+                "link": "https://github.com/tarikCekirge"
+            },
+            {
+                "logo": "FaLinkedinIn",
+                "alt_text": "Linkedin",
+                "link": "https://www.linkedin.com/in/tarikcekirge/"
+            }
+        ]
+    },
+    "SkillsBlock": {
+        "title": "Skills",
+        "skills": [
+            {
+                "title": "JavaScript",
+                "content": "The backbone of modern web applications, enabling interactive and dynamic user experiences."
+            },
+            {
+                "title": "React",
+                "content": "A component-based library that helps build fast, dynamic, and reusable user interfaces."
+            },
+            {
+                "title": "TypeScript",
+                "content": "Adds strong typing to JavaScript, reducing errors and improving scalability for large applications."
+            },
+            {
+                "title": "TailwindCSS",
+                "content": "A utility-first CSS framework for quickly building custom, responsive designs."
+            },
+            {
+                "title": "Next.js",
+                "content": "A powerful React framework that supports server-side rendering and static site generation."
+            },
+            {
+                "title": "Redux Toolkit",
+                "content": "Simplifies global state management and helps organize complex React applications efficiently."
+            }
+        ]
+    },
+    "ProfileBlock": {
+        "title": "Profile",
+        "profile": {
+            "Date of Birth": "24.03.1996",
+            "City of Residence": "Ankara",
+            "Education": "Bachelor's Degree in Biology, Hacettepe University, 2016",
+            "Preferred Role": "Frontend Developer, UI Designer"
+        }
+    },
+    "AboutMeBlock": {
+        "title": "About Me",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+    },
+    "ProjectsBlock": {
+        "title": "Projects",
+        "projects": [
+            {
+                "image": "Image",
+                "title": "Workintech",
+                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. Created with vanilla JS, SCSS, and Parcel Bundler. Available as an NPM package with full customization options.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "Github",
+                "viewSiteLink": "View Site"
+            },
+            {
+                "image": "Image",
+                "title": "Workintech",
+                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. Created with vanilla JS, SCSS, and Parcel Bundler. Available as an NPM package with full customization options.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "Github",
+                "viewSiteLink": "View Site"
+            },
+            {
+                "image": "Image",
+                "title": "Workintech",
+                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. Created with vanilla JS, SCSS, and Parcel Bundler. Available as an NPM package with full customization options.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "Github",
+                "viewSiteLink": "View Site"
+            }
+        ]
+    },
+    "Footer": {
+        "title": "Let’s work together on your next product.",
+        "email": "tcekirge@gmail.com",
+        "links": [
+            {
+                "name": "Personal Blog",
+                "url": "https://www.tarikcekirge.com/",
+                "color": "text-gray-900 dark:text-primary-200"
+            },
+            {
+                "name": "Github",
+                "url": "https://github.com/tarikCekirge",
+                "color": "text-jade-600"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/tarikcekirge/",
+                "color": "text-blue-700"
+            }
+        ]
+    }
+}

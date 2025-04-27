@@ -1,30 +1,45 @@
 
-import heroImg from '@/assets/images/hero-img.jpg'
 import { Button } from "@/components/ui/button"
 import { Link } from 'react-router'
 
-const ProjectCard = () => {
+interface ProjectCardProps {
+    image: string;
+    title: string;
+    description: string;
+    technologies: string[];
+    githubLink: string;
+    viewSiteLink: string;
+}
+
+const ProjectCard = ({
+    image,
+    title,
+    description,
+    technologies,
+    githubLink,
+    viewSiteLink
+}: ProjectCardProps) => {
     return (
         <article className='space-y-4'>
-            <img src={heroImg} alt="Image" className=" w-full object-cover aspect-video " />
-            <h4 className='text-3xl mb-2 font-medium text-primary-700 dark:text-primary-300'>Workintech</h4>
-            <p className='text-sm text-muted-foreground dark:text-white leading-tight'>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
+            <img src={image} alt={title} className="w-full object-cover aspect-video" />
+            <h4 className='text-3xl mb-2 font-medium text-primary-700 dark:text-primary-300'>{title}</h4>
+            <p className='text-sm text-muted-foreground dark:text-white leading-tight'>{description}</p>
             <div className='flex gap-2 justify-start flex-wrap'>
-                <Button className='font-normal text-sm' variant={'outline'} size={'sm'}>react</Button>
-                <Button className='font-normal text-sm' variant={'outline'} size={'sm'}>redux</Button>
-                <Button className='font-normal text-sm' variant={'outline'} size={'sm'}>axios</Button>
+                {technologies.map((tech, index) => (
+                    <Button key={index} className='font-normal text-sm dark:bg-[#383838]' variant={'outline'} size={'sm'}>
+                        {tech}
+                    </Button>
+                ))}
             </div>
             <div className='flex items-center justify-between'>
                 <Button asChild variant={'link'} className='underline p-0'>
-                    <Link to={'https://github.com/tarikCekirge'}>Github</Link>
+                    <Link to={githubLink}>Github</Link>
                 </Button>
                 <Button asChild variant={'link'} className='underline p-0'>
-                    <Link to={'https://github.com/tarikCekirge'}>View Site</Link>
+                    <Link to={viewSiteLink}>View Site</Link>
                 </Button>
             </div>
-
         </article>
-
     )
 }
 

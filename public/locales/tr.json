@@ -1,0 +1,123 @@
+{
+  "language": "Turkish",
+  "greeting": "Merhaba Dünya!",
+  "header": {
+      "skills": "Yetenekler",
+      "projects": "Projeler",
+      "hireMe": "Beni İşe Al"
+  },
+  "HeroBlock": {
+      "greeting": "Almila Su",
+      "intro": "Yaratıcı Düşünür Minimalizm Aşığı",
+      "content": "Merhaba, ben Tarık. Ben bir full-stack geliştiriciyim. Eğer sağlam ve ölçeklenebilir frontend ürünleri geliştirebilecek bir geliştirici arıyorsanız, tanışalım!",
+      "socials": [
+          {
+              "logo": "",
+              "alt_text": "Beni İşe Al",
+              "link": "https://www.linkedin.com/in/tarikcekirge/"
+          },
+          {
+              "logo": "FaGithub",
+              "alt_text": "Github",
+              "link": "https://github.com/tarikCekirge"
+          },
+          {
+              "logo": "FaLinkedinIn",
+              "alt_text": "Linkedin",
+              "link": "https://www.linkedin.com/in/tarikcekirge/"
+          }
+      ]
+  },
+  "SkillsBlock": {
+      "title": "Yetenekler",
+      "skills": [
+          {
+              "title": "JavaScript",
+              "content": "Modern web uygulamalarının bel kemiği olup, etkileşimli ve dinamik kullanıcı deneyimleri sağlar."
+          },
+          {
+              "title": "React",
+              "content": "Hızlı, dinamik ve yeniden kullanılabilir kullanıcı arayüzleri oluşturmaya yardımcı olan bileşen tabanlı bir kütüphane."
+          },
+          {
+              "title": "TypeScript",
+              "content": "JavaScript’e güçlü bir tür sistemi ekleyerek hataları azaltır ve büyük projelerin ölçeklenmesini kolaylaştırır."
+          },
+          {
+              "title": "TailwindCSS",
+              "content": "Hızlı bir şekilde özel ve duyarlı tasarımlar oluşturmayı sağlayan utility-first bir CSS çatısıdır."
+          },
+          {
+              "title": "Next.js",
+              "content": "Sunucu tarafı render ve statik site oluşturmayı destekleyen güçlü bir React çatısıdır."
+          },
+          {
+              "title": "Redux Toolkit",
+              "content": "Global durum yönetimini kolaylaştırır ve karmaşık React uygulamalarını düzenli hale getirir."
+          }
+      ]
+  },
+  "ProfileBlock": {
+      "title": "Profil",
+      "profile": {
+          "Doğum Tarihi": "24.03.1996",
+          "İkamet Şehri": "Ankara",
+          "Eğitim Durumu": "Hacettepe Üniversitesi Biyoloji Lisans, 2016",
+          "Tercih Ettiği Rol": "Frontend Geliştirici, UI Tasarımcısı"
+      }
+  },
+  "AboutMeBlock": {
+      "title": "Hakkımda",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+  },
+  "ProjectsBlock": {
+      "title": "Projeler",
+      "projects": [
+          {
+              "image": "Resim",
+              "title": "Workintech",
+              "description": "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu. NPM paketi olarak kullanılabilir ve tam özelleştirme desteği sunar.",
+              "technologies": ["react", "redux", "axios"],
+              "githubLink": "Github",
+              "viewSiteLink": "Siteyi Gör"
+          },
+          {
+              "image": "Resim",
+              "title": "Workintech",
+              "description": "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu. NPM paketi olarak kullanılabilir ve tam özelleştirme desteği sunar.",
+              "technologies": ["react", "redux", "axios"],
+              "githubLink": "Github",
+              "viewSiteLink": "Siteyi Gör"
+          },
+          {
+              "image": "Resim",
+              "title": "Workintech",
+              "description": "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu. NPM paketi olarak kullanılabilir ve tam özelleştirme desteği sunar.",
+              "technologies": ["react", "redux", "axios"],
+              "githubLink": "Github",
+              "viewSiteLink": "Siteyi Gör"
+          }
+      ]
+  },
+  "Footer": {
+      "title": "Bir sonraki projenizde birlikte çalışalım.",
+      "email": "tcekirge@gmail.com",
+      "links": [
+        {
+          "name": "Kişisel Blog",
+          "url": "https://www.tarikcekirge.com/",
+          "color": "text-gray-900 dark:text-primary-200"
+      },
+      {
+          "name": "Github",
+          "url": "https://github.com/tarikCekirge",
+          "color": "text-jade-600"
+      },
+      {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/tarikcekirge/",
+          "color": "text-blue-700"
+      }
+      ]
+  }
+}
