@@ -2,6 +2,9 @@ import { useAppSelector } from '@/store/hook';
 import BlockTitle from '../blockTitle'
 import ProjectCard from '../projectCard'
 import { selectLanguageData } from '@/store/features/ui';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '../ui/carousel';
+import Autoplay from 'embla-carousel-autoplay'
+
 
 
 interface Project {
@@ -33,19 +36,33 @@ const ProjectsBlock = () => {
         <section className="py-8 lg:py-16">
             <div className="container">
                 <BlockTitle>{title}</BlockTitle>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {projects &&
-                        projects.map((project, index) => (
-                            <ProjectCard
-                                key={index}
-                                image={project.image}
-                                title={project.title}
-                                description={project.description}
-                                technologies={project.technologies}
-                                githubLink={project.githubLink}
-                                viewSiteLink={project.viewSiteLink}
-                            />
-                        ))}
+                <div className="">
+                    <Carousel
+                        plugins={[
+                            Autoplay({
+                                delay: 3000,
+                            }),
+                        ]}>
+                        <CarouselContent className="-ml-6 md:-ml-12">
+                            {projects &&
+                                projects.map((project, index) => (
+                                    <CarouselItem key={index} className="pl-6 md:pl-12 md:basis-1/2 lg:basis-1/3">
+                                        <ProjectCard
+                                            image={project.image}
+                                            title={project.title}
+                                            description={project.description}
+                                            technologies={project.technologies}
+                                            githubLink={project.githubLink}
+                                            viewSiteLink={project.viewSiteLink}
+                                        />
+                                    </CarouselItem>
+                                ))}
+                        </CarouselContent>
+                        <div className='relative mt-8 flex items-center justify-center gap-6'>
+                            <CarouselPrevious className='relative left-auto rounded-sm cursor-pointer disabled:cursor-auto' />
+                            <CarouselNext className='relative right-auto rounded-sm cursor-pointer disabled:cursor-auto' />
+                        </div>
+                    </Carousel>
                 </div>
             </div>
         </section>
