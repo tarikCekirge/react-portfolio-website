@@ -24,7 +24,9 @@ const Hero = () => {
             <div className="container">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 xl:gap-12">
                     <div className='flex-1 flex flex-col gap-4 xl:gap-[40px]'>
-                        <span>{greeting}</span>
+                        <div className="flex items-center gap-2.5">
+                            <span className="inline-block w-[61px] lg:w-[102px] h-[1px] bg-primary-700 dark:bg-primary-300"></span><span className="text-primary-700 dark:text-primary-300">{greeting}</span>
+                        </div>
                         <h1 className='text-4xl md:text-xlg xl:text-7xl font-bold text-gray-700 dark:text-primary-300'>
                             {intro}
                         </h1>
