@@ -23,6 +23,7 @@
   --color-primary-500: #7b61ff;
   --color-primary-550: #6c63f1;
   --color-primary-600: #5046e5;
+  --color-primary-650: #4731d3;
   --color-primary-700: #4338ca;
   --color-primary-800: #3730a3;
   --color-primary-900: #332e81;
@@ -55,6 +56,7 @@
   --color-gray-200: #d9d9d9;
   --color-gray-300: #6b7280;
   --color-gray-400: #999999;
+  --color-gray-450: #3a3a3a;
   --color-gray-500: #777777;
   --color-gray-600: #6b7280;
   --color-gray-650: #141414;
@@ -219,4 +221,27 @@
 .image-shadow {
   box-shadow: 0 8px 28px -6px rgba(24, 39, 75, 0.12),
     0 18px 88px -4px rgba(24, 39, 75, 0.14);
+}
+
+.mode-swither {
+  @apply block w-[55px] h-6 bg-primary-650 dark:bg-gray-400 rounded-2xl relative p-1 overflow-hidden;
+}
+
+.moon {
+  @apply rounded-full bg-yellow-300 size-[16px] absolute left-[5px] right-auto top-1/2 -translate-y-1/2 transition-transform ease-in;
+}
+.moon::after {
+  @apply content-['']  absolute size-[13px] rounded-full right-[-4px] bg-gray-400 top-1/2 -translate-y-1/2 opacity-0 transition-opacity;
+}
+
+.moon.dark {
+  @apply translate-x-[28px];
+}
+
+.moon.dark::after {
+  @apply opacity-100;
+}
+
+span.lang {
+  @apply text-primary-550 dark:text-primary-250;
 }

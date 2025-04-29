@@ -21,7 +21,7 @@ const Footer = () => {
         <footer className="py-12 lg:py-16 xl:py-24 bg-gray-100 dark:bg-gray-650">
             <div className="container">
                 <h5 className="text-center md:text-left text-3xl md:text-4xl lg:text-5xl max-w-xl font-semibold text-gray-700 dark:text-primary-100">
-                    {title || "Let’s work together on your next product."}
+                    {title}
                 </h5>
                 <div className="flex flex-col md:flex-row items-center justify-between mt-4 md:mt-12 lg:mt-14">
                     <div className="flex items-center justify-center lg:justify-between">

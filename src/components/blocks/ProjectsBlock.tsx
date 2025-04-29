@@ -32,7 +32,7 @@ const ProjectsBlock = () => {
     return (
         <section className="py-8 lg:py-16">
             <div className="container">
-                <BlockTitle>{title || "Projeler"}</BlockTitle>
+                <BlockTitle>{title}</BlockTitle>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
                     {projects &&
                         projects.map((project, index) => (

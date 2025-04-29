@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 
 import { toggleTheme, setLanguage, selectTheme, selectLanguage } from '@/store/features/ui';
 import { useAppDispatch, useAppSelector } from "@/store/hook";
+import { cn } from "@/lib/utils";
 
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
 
 
     const themeButtonText = currentTheme === 'light' ? 'DARK MODE' : 'LIGHT MODE';
-    const languageButtonText = currentLanguage === 'en' ? "TÜRKÇE'YE GEÇ" : 'SWITCH TO ENGLISH';
+    const languageButtonText = currentLanguage === 'en';
 
     const handleThemeToggle = () => {
         dispatch(toggleTheme());
@@ -31,10 +32,12 @@ const Header = () => {
                 <div className="flex h-5 items-center justify-end space-x-4 text-sm text-[#777777]">
                     <button
                         onClick={handleThemeToggle}
-                        className="hover:no-underline px-0 cursor-pointer font-medium text-sm"
+                        className="hover:no-underline px-0 cursor-pointer font-medium text-sm flex gap-2 dark:text-gray-200"
                         aria-label={`Switch to ${currentTheme === 'light' ? 'dark' : 'light'} mode`}
                     >
-                        {themeButtonText}
+                        <span className="mode-swither">
+                            <span className={cn("moon", currentTheme)}></span>
+                        </span>  {themeButtonText}
                     </button>
                     <Separator orientation="vertical" className="!w-0.5 bg-[#777777] !h-4" />
                     <button
@@ -42,8 +45,16 @@ const Header = () => {
                         className="hover:no-underline px-0 cursor-pointer font-medium text-sm"
                         aria-label={`Switch language to ${currentLanguage === 'en' ? 'Turkish' : 'English'}`}
                     >
+                        {languageButtonText ? (
+                            <>
+                                SWITCH TO <span className="lang">TURKISH</span>
 
-                        {languageButtonText}
+                            </>
+                        ) : (
+                            <>
+                                <span className="lang">İNGİLİZCE</span>'YE GEÇ
+                            </>
+                        )}
                     </button>
                 </div>
             </div>
