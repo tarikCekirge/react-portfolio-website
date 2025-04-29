@@ -33,7 +33,7 @@ const ProjectsBlock = () => {
 
 
     return (
-        <section className="py-8 lg:py-16">
+        <section className="py-8 lg:py-16" id='projects'>
             <div className="container">
                 <BlockTitle>{title}</BlockTitle>
                 <div className="">

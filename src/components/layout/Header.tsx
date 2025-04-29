@@ -60,9 +60,9 @@ const Header = () => {
             </div>
             <nav className="container items-center flex justify-end space-x-8">
                 <Button asChild className="rounded-full size-12  text-primary-500 hover:text-[#EEEBFF] text-2xl font-semibold bg-[#EEEBFF] mr-auto"><Link className="rotate-[30deg]" to={'/'}>T</Link></Button>
-                <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><Link to={'#skills'}>Skills</Link></Button>
-                <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><Link to={'#skills'}>Projects</Link></Button>
-                <Button className=" text-lg" variant={'outline'} >Hire me</Button>
+                <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#skills">Skills</a></Button>
+                <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#projects">Projects</a></Button>
+                <Button className=" text-lg" variant={'outline'} asChild ><Link target="_blank" to={'https://www.linkedin.com/in/tarikcekirge/'}>Hire me</Link></Button>
             </nav>
         </header>
     )

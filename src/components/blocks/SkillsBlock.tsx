@@ -15,7 +15,7 @@ const SkillsBlock = () => {
 
     if (!skills) return null;
     return (
-        <section className="py-8 lg:py-16">
+        <section className="py-8 lg:py-16" id="skills" >
             <div className="container">
                 <BlockTitle>{title}</BlockTitle>
                 <div className="grid gap-6 md:gap-8 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">

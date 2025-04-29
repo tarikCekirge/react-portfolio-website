@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from './store/hook';
 import { selectIsLanguageLoading, selectLanguage, selectLanguageData, selectLanguageError, setLanguage } from './store/features/ui';
 import ScreenLoading from './components/common/ScreenLoading';
 import AppRoutes from './routes/AppRoutes ';
+import { ScrollToTop } from './components/scroll-to-top';
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <AppRoutes />
+      <ScrollToTop />
     </BrowserRouter>
   );
 }

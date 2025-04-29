@@ -207,6 +207,9 @@
   #root {
     @apply flex flex-col min-h-screen;
   }
+  html {
+    @apply scroll-smooth;
+  }
 }
 
 @layer utilities {
