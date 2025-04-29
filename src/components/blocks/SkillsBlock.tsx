@@ -1,6 +1,6 @@
 import { useAppSelector } from "@/store/hook";
 import BlockTitle from "../blockTitle"
-import SkillCard from "../../components/skillCard"
+import SkillCard from "../skills-card"
 import { selectLanguageData } from "@/store/features/ui";
 
 
