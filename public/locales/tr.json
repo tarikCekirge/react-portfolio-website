@@ -3,7 +3,25 @@
   "header": {
       "skills": "Yetenekler",
       "projects": "Projeler",
-      "hireMe": "Beni İşe Al"
+      "hireMe": "Beni İşe Al",
+      "links": [
+        {
+          "type": "link",
+          "label": "Yetenekler",
+          "url": "#skills"
+        },
+        {
+          "type": "link",
+          "label": "Projeler",
+          "url": "#projects"
+        },
+        {
+          "type": "outline",
+          "label": "Beni işe al",
+          "url": "https://www.linkedin.com/in/tarikcekirge/"
+        }
+      ]
+      
   },
   "HeroBlock": {
       "greeting": "I'm Tarık",

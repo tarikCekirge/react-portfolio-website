@@ -2,16 +2,24 @@ import { Separator } from "@/components/ui/separator"
 import { Link } from "react-router"
 import { Button } from "@/components/ui/button"
 
-import { toggleTheme, setLanguage, selectTheme, selectLanguage } from '@/store/features/ui';
+import { toggleTheme, setLanguage, selectTheme, selectLanguage, selectLanguageData } from '@/store/features/ui';
 import { useAppDispatch, useAppSelector } from "@/store/hook";
 import { cn } from "@/lib/utils";
 
+
+interface LinkItem {
+    type: "link" | "outline";
+    label: string;
+    url: string;
+}
 
 const Header = () => {
 
     const dispatch = useAppDispatch();
     const currentTheme = useAppSelector(selectTheme);
     const currentLanguage = useAppSelector(selectLanguage);
+    const data = useAppSelector(selectLanguageData);
+    const links = data?.header?.links
 
 
     const themeButtonText = currentTheme === 'light' ? 'DARK MODE' : 'LIGHT MODE';
@@ -60,9 +68,26 @@ const Header = () => {
             </div>
             <nav className="container items-center flex justify-end space-x-8">
                 <Button asChild className="rounded-full size-12  text-primary-500 hover:text-[#EEEBFF] text-2xl font-semibold bg-[#EEEBFF] mr-auto"><Link className="rotate-[30deg]" to={'/'}>T</Link></Button>
-                <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#skills">Skills</a></Button>
+
+                {/* <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#skills">Skills</a></Button>
                 <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#projects">Projects</a></Button>
-                <Button className=" text-lg" variant={'outline'} asChild ><Link target="_blank" to={'https://www.linkedin.com/in/tarikcekirge/'}>Hire me</Link></Button>
+                <Button className=" text-lg" variant={'outline'} asChild ><Link target="_blank" to={'https://www.linkedin.com/in/tarikcekirge/'}>Hire me</Link></Button> */}
+
+                {/* {links.map((link: LinkItem) => (
+                    <Button className=" text-lg" variant={link.type} asChild ><Link target="_blank" to={link.url}>{link.label}</Link></Button>
+                ))} */}
+
+                {links && links.length > 0 &&
+                    links.map((link: LinkItem) => (
+                        <Button key={link.url} className={cn("text-lg ", {
+                            "text-gray-600 p-0": link.type === 'link'
+                        })} variant={link.type} asChild>
+                            <Link target="_blank" to={link.url}>
+                                {link.label}
+                            </Link>
+                        </Button>
+                    ))
+                }
             </nav>
         </header>
     )

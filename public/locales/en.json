@@ -3,7 +3,24 @@
     "header": {
         "skills": "Skills",
         "projects": "Projects",
-        "hireMe": "Hire me"
+        "hireMe": "Hire me",
+        "links":[
+            {
+                "type":"link",
+                "label":"Skills",
+                "url":"#skills"
+            },
+            {
+                "type":"link",
+                "label":"Projects",
+                "url":"#projects"
+            },
+            {
+                "type":"outline",
+                "label":"Hire me",
+                "url":"https://www.linkedin.com/in/tarikcekirge/"
+            }
+        ]
     },
     "HeroBlock": {
         "greeting": "I'm Tarık",
