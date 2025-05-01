@@ -1,6 +1,5 @@
 {
   "language": "Turkish",
-  "greeting": "Merhaba Dünya!",
   "header": {
       "skills": "Yetenekler",
       "projects": "Projeler",
@@ -73,30 +72,99 @@
   "ProjectsBlock": {
       "title": "Projeler",
       "projects": [
-          {
-              "image": "Resim",
-              "title": "Workintech",
-              "description": "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu. NPM paketi olarak kullanılabilir ve tam özelleştirme desteği sunar.",
-              "technologies": ["react", "redux", "axios"],
-              "githubLink": "Github",
-              "viewSiteLink": "Siteyi Gör"
-          },
-          {
-              "image": "Resim",
-              "title": "Workintech",
-              "description": "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu. NPM paketi olarak kullanılabilir ve tam özelleştirme desteği sunar.",
-              "technologies": ["react", "redux", "axios"],
-              "githubLink": "Github",
-              "viewSiteLink": "Siteyi Gör"
-          },
-          {
-              "image": "Resim",
-              "title": "Workintech",
-              "description": "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu. NPM paketi olarak kullanılabilir ve tam özelleştirme desteği sunar.",
-              "technologies": ["react", "redux", "axios"],
-              "githubLink": "Github",
-              "viewSiteLink": "Siteyi Gör"
-          }
+        {
+          "image": "images/projects/witflix.jpg",
+          "title": "Workintech",
+          "description": "Witflix, kullanıcıların popüler filmleri keşfedebileceği, detaylı film bilgilerini görüntüleyebileceği ve favori listesi oluşturabileceği şık ve duyarlı bir film tarama platformudur. Next.js, React, TailwindCSS ve TypeScript ile geliştirilen bu uygulama, modern tasarımı ve optimize performansıyla akıcı bir kullanıcı deneyimi sunar.",
+          "technologies": [
+            "Next Js",
+            "React",
+            "TailwindCSS",
+            "TypeScript"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/WitFlix",
+          "viewSiteLink": "https://witflix-jet.vercel.app/"
+        },
+        {
+          "image": "images/projects/pizza-order.jpg",
+          "title": "Tekno Pizza",
+          "description": "Tekno Pizza, kullanıcıların pizzalarını çeşitli malzemelerle özelleştirebildiği, boyut seçimi yapabildiği ve sipariş verebildiği etkileşimli bir pizza sipariş uygulamasıdır. React, TailwindCSS ve TypeScript ile geliştirilmiş olan uygulama, React Hook Form ile form doğrulama ve sorunsuz gezinme özellikleriyle kullanıcı dostu bir deneyim sunar.",
+          "technologies": [
+            "React",
+            "TailwindCSS",
+            "TypeScript",
+            "React Dom",
+            "React Hook Form"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/pizza-react",
+          "viewSiteLink": "https://pizza-react-rouge.vercel.app/"
+        },
+        {
+          "image": "images/projects/bookstore-api.jpg",
+          "title": "Bookstore",
+          "description": "Bookstore, kullanıcıların geniş bir kitap yelpazesini inceleyebildiği, detaylı bilgileri görüntüleyebildiği ve favori kitaplarını alışveriş sepetine ekleyebildiği modern ve duyarlı bir web uygulamasıdır. React, TailwindCSS ve TypeScript ile geliştirilen uygulama, React Hook Form ile form yönetimi ve dinamik sepet yapısı ile sorunsuz bir kullanıcı deneyimi sağlar.",
+          "technologies": [
+            "React",
+            "TailwindCSS",
+            "TypeScript",
+            "React Dom",
+            "React Hook Form"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/book-store",
+          "viewSiteLink": "https://book-store-tan-xi.vercel.app/"
+        },
+        {
+          "image": "images/projects/project-management.jpg",
+          "title": "Project Management",
+          "description": "Project Management, ekiplerin projelerini planlamasına, görev atamalarına ve iş süreçlerini verimli bir şekilde yönetmesine yardımcı olan kullanıcı dostu bir proje takip uygulamasıdır. React, TailwindCSS ve TypeScript ile geliştirilen uygulama; görev oluşturma, tarih belirleme, ilerleme takibi ve React Hook Form ile form işlemleri gibi özelliklere sahiptir.",
+          "technologies": [
+            "React",
+            "TailwindCSS",
+            "TypeScript",
+            "React Dom",
+            "React Hook Form"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/project-management-app",
+          "viewSiteLink": "https://project-management-app-roan-beta.vercel.app/"
+        },
+        {
+          "image": "images/projects/portfolio-site.jpg",
+          "title": "Portfolio Web Site",
+          "description": "Portfolio Web Site, projelerinizi, yeteneklerinizi ve deneyimlerinizi sergilemek için tasarlanmış profesyonel ve duyarlı bir kişisel portföy uygulamasıdır. React, TypeScript, TailwindCSS ve Redux kullanılarak oluşturulan bu site; React Router ile sorunsuz gezinme, düzenli proje bölümleri ve modern kullanıcı arayüzüyle etkileyici bir sunum sağlar.",
+          "technologies": [
+            "TypeScript",
+            "React",
+            "TailwindCSS",
+            "React Router",
+            "Redux"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/react-portfolio-website",
+          "viewSiteLink": "https://react-portfolio-website-delta-pink.vercel.app/"
+        },
+        {
+          "image": "images/projects/film-db.jpg",
+          "title": "Film Db",
+          "description": "Film Db, kullanıcıların çok çeşitli filmleri tarayabileceği, detaylı film bilgilerini görüntüleyebileceği ve favori listesi oluşturabileceği dinamik bir film veritabanı uygulamasıdır. React, TailwindCSS ve Redux ile geliştirilen uygulama, filtreleme, gezinme ve favorilere ekleme gibi işlevler için etkili bir global durum yönetimi sunar.",
+          "technologies": [
+            "React",
+            "TailwindCSS",
+            "Redux"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/imdb-film",
+          "viewSiteLink": "https://imdb-film-db.vercel.app/movies"
+        },
+        {
+          "image": "images/projects/lesson-goals.jpg",
+          "title": "Lesson Goals",
+          "description": "Lesson Goals, kullanıcıların öğrenme hedeflerini veya çalışma görevlerini oluşturmasına, yönetmesine ve takip etmesine yardımcı olan basit ve etkili bir hedef takip uygulamasıdır. React, TailwindCSS ve React Dom ile geliştirilen uygulama; görev ekleme, tamamlama ve silme özelliklerini temiz ve duyarlı bir arayüzle sunar.",
+          "technologies": [
+            "React",
+            "TailwindCSS",
+            "React Dom"
+          ],
+          "githubLink": "https://github.com/tarikCekirge/lesson-goals",
+          "viewSiteLink": "https://lesson-goals.vercel.app/"
+        }
       ]
   },
   "Footer": {

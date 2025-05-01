@@ -1,6 +1,5 @@
 {
     "language": "English",
-    "greeting": "Hello World!",
     "header": {
         "skills": "Skills",
         "projects": "Projects",
@@ -74,40 +73,97 @@
         "title": "Projects",
         "projects": [
             {
-                "image": "Image",
+                "image": "images/projects/witflix.jpg",
                 "title": "Workintech",
-                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. Created with vanilla JS, SCSS, and Parcel Bundler. Available as an NPM package with full customization options.",
+                "description": "Witflix is a sleek and responsive movie browsing platform where users can discover trending films, view detailed movie information, and build their own favorites list. Built with Next.js, React, TailwindCSS, and TypeScript, it offers a smooth and fast user experience with modern design and optimized performance.",
                 "technologies": [
-                    "react",
-                    "redux",
-                    "axios"
+                    "Next Js",
+                    "React",
+                    "TailwindCSS",
+                    "TypeScript"
                 ],
-                "githubLink": "Github",
-                "viewSiteLink": "View Site"
+                "githubLink": "https://github.com/tarikCekirge/WitFlix",
+                "viewSiteLink": "https://witflix-jet.vercel.app/"
             },
             {
-                "image": "Image",
-                "title": "Workintech",
-                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. Created with vanilla JS, SCSS, and Parcel Bundler. Available as an NPM package with full customization options.",
+                "image": "images/projects/pizza-order.jpg",
+                "title": "Tekno Pizza",
+                "description": "Tekno Pizza is an interactive pizza ordering application where users can customize their pizzas with various ingredients, select sizes, and submit orders through a responsive and user-friendly interface. Built with React, TailwindCSS, and TypeScript, it features form validation with React Hook Form and seamless navigation for a smooth ordering experience.",
                 "technologies": [
-                    "react",
-                    "redux",
-                    "axios"
+                    "React",
+                    "TailwindCSS",
+                    "TypeScript",
+                    "React Dom",
+                    "React Hook Form"
                 ],
-                "githubLink": "Github",
-                "viewSiteLink": "View Site"
+                "githubLink": "https://github.com/tarikCekirge/pizza-react",
+                "viewSiteLink": "https://pizza-react-rouge.vercel.app/"
             },
             {
-                "image": "Image",
-                "title": "Workintech",
-                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. Created with vanilla JS, SCSS, and Parcel Bundler. Available as an NPM package with full customization options.",
+                "image": "images/projects/bookstore-api.jpg",
+                "title": "Bookstore",
+                "description": "Bookstore is a modern and responsive web application where users can browse a wide selection of books, view detailed information, and add their favorite titles to a shopping cart. Built with React, TailwindCSS, and TypeScript, the app features form handling with React Hook Form, clean UI components, and dynamic cart management for a seamless user experience.",
                 "technologies": [
-                    "react",
-                    "redux",
-                    "axios"
+                    "React",
+                    "TailwindCSS",
+                    "TypeScript",
+                    "React Dom",
+                    "React Hook Form"
                 ],
-                "githubLink": "Github",
-                "viewSiteLink": "View Site"
+                "githubLink": "https://github.com/tarikCekirge/book-store",
+                "viewSiteLink": "https://book-store-tan-xi.vercel.app/"
+            },
+            {
+                "image": "images/projects/project-management.jpg",
+                "title": "Project Management",
+                "description": "Project Management is a user-friendly task and project tracking application designed to help teams plan, assign, and manage their work efficiently. Built with React, TailwindCSS, and TypeScript, it includes features like task creation, deadline setting, progress tracking, and form handling with React Hook Form, all within a clean and responsive interface.",
+                "technologies": [
+                    "React",
+                    "TailwindCSS",
+                    "TypeScript",
+                    "React Dom",
+                    "React Hook Form"
+                ],
+                "githubLink": "https://github.com/tarikCekirge/project-management-app",
+                "viewSiteLink": "https://project-management-app-roan-beta.vercel.app/"
+            },
+            {
+                "image": "images/projects/portfolio-site.jpg",
+                "title": "Portfolio Web Site",
+                "description": "Portfolio Web Site is a professional and fully responsive personal portfolio application designed to showcase projects, skills, and experience. Built with React, TypeScript, TailwindCSS, and Redux, the site features smooth navigation with React Router, organized project sections, and a modern UI to highlight development capabilities effectively.",
+                "technologies": [
+                    "TypeScript",
+                    "React",
+                    "TailwindCSS",
+                    "React Router",
+                    "Redux"
+                ],
+                "githubLink": "https://github.com/tarikCekirge/react-portfolio-website",
+                "viewSiteLink": "https://react-portfolio-website-delta-pink.vercel.app/"
+            },
+            {
+                "image": "images/projects/film-db.jpg",
+                "title": "Film Db",
+                "description": "Film Db is a dynamic movie database application where users can browse a wide range of films, view detailed information, and manage a list of their favorite movies. Built with React, TailwindCSS, and Redux, the app offers a responsive interface and efficient global state management for features like filtering, navigation, and user-selected favorites.",
+                "technologies": [
+                    "React",
+                    "TailwindCSS",
+                    "Redux"
+                ],
+                "githubLink": "https://github.com/tarikCekirge/imdb-film",
+                "viewSiteLink": "https://imdb-film-db.vercel.app/movies"
+            },
+            {
+                "image": "images/projects/lesson-goals.jpg",
+                "title": "Lesson Goals",
+                "description": "Lesson Goals is a simple and effective goal-tracking application that helps users create, manage, and monitor learning objectives or study tasks. Built with React, TailwindCSS, and Redux, the app allows users to add, complete, and remove goals in a clean and responsive interface, providing a focused and organized learning experience.",
+                "technologies": [
+                    "React",
+                    "TailwindCSS",
+                    "React Dom"
+                ],
+                "githubLink": "https://github.com/tarikCekirge/lesson-goals",
+                "viewSiteLink": "https://lesson-goals.vercel.app/"
             }
         ]
     },
