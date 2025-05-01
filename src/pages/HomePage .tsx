@@ -10,9 +10,9 @@ const HomePage = () => {
         <>
             <HeroBlock />
             <SkillsBlock />
-            <Separator />
+            <Separator className="data-[orientation=horizontal]:bg-[#BAB2E7]" />
             <ProfileBLock />
-            <Separator />
+            <Separator className="data-[orientation=horizontal]:bg-[#BAB2E7]" />
             <ProjectsBlock />
         </>
     )
