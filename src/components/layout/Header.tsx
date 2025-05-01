@@ -68,23 +68,14 @@ const Header = () => {
             </div>
             <nav className="container items-center flex justify-end space-x-8">
                 <Button asChild className="rounded-full size-12  text-primary-500 hover:text-[#EEEBFF] text-2xl font-semibold bg-[#EEEBFF] mr-auto"><Link className="rotate-[30deg]" to={'/'}>T</Link></Button>
-
-                {/* <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#skills">Skills</a></Button>
-                <Button className="p-0 text-gray-600 text-lg" variant={'link'} asChild><a href="#projects">Projects</a></Button>
-                <Button className=" text-lg" variant={'outline'} asChild ><Link target="_blank" to={'https://www.linkedin.com/in/tarikcekirge/'}>Hire me</Link></Button> */}
-
-                {/* {links.map((link: LinkItem) => (
-                    <Button className=" text-lg" variant={link.type} asChild ><Link target="_blank" to={link.url}>{link.label}</Link></Button>
-                ))} */}
-
                 {links && links.length > 0 &&
                     links.map((link: LinkItem) => (
                         <Button key={link.url} className={cn("text-lg ", {
                             "text-gray-600 p-0": link.type === 'link'
                         })} variant={link.type} asChild>
-                            <Link target="_blank" to={link.url}>
+                            <a target={link.type === "outline" ? "_blank" : "_self"} href={link.url}>
                                 {link.label}
-                            </Link>
+                            </a>
                         </Button>
                     ))
                 }
