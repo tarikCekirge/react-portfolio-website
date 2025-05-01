@@ -91,7 +91,7 @@
         "projects": [
             {
                 "image": "images/projects/witflix.jpg",
-                "title": "Workintech",
+                "title": "Witflix",
                 "description": "Witflix is a sleek and responsive movie browsing platform where users can discover trending films, view detailed movie information, and build their own favorites list. Built with Next.js, React, TailwindCSS, and TypeScript, it offers a smooth and fast user experience with modern design and optimized performance.",
                 "technologies": [
                     "Next Js",

@@ -92,7 +92,7 @@
       "projects": [
         {
           "image": "images/projects/witflix.jpg",
-          "title": "Workintech",
+          "title": "Witflix",
           "description": "Witflix, kullanıcıların popüler filmleri keşfedebileceği, detaylı film bilgilerini görüntüleyebileceği ve favori listesi oluşturabileceği şık ve duyarlı bir film tarama platformudur. Next.js, React, TailwindCSS ve TypeScript ile geliştirilen bu uygulama, modern tasarımı ve optimize performansıyla akıcı bir kullanıcı deneyimi sunar.",
           "technologies": [
             "Next Js",
